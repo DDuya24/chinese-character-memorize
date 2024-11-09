@@ -55,27 +55,11 @@ h1, h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
     overflow-y: auto;  /* 기본적으로 스크롤 가능 */
     scroll-behavior: smooth;  /* 스크롤 시 부드러운 이동 */
-    -webkit-overflow-scrolling: touch; /* 터치스크린에서 부드러운 스크롤 적용 */
 }
 
-/* 모바일에서 스크롤바 보이도록 설정 */
-@media (max-width: 600px) {
-    .button-container {
-        overflow-y: scroll; /* 스크롤바 항상 표시 */
-        height: 80vh; /* 모바일 화면에서 높이 설정 */
-    }
-}
-
-/* 과목 선택 화면에서는 스크롤바 숨기기 */
-.hide-scrollbar {
-    overflow-y: hidden;  /* 과목 선택 시 스크롤바 숨기기 */
-}
-
-/* 모바일 및 터치스크린에서 스크롤 조정 */
-@media (pointer: coarse) {
-    .button-container {
-        touch-action: none; /* 터치스크린에서 기본 스크롤을 비활성화하여 손으로 슬라이드 가능 */
-    }
+/* 스크롤바 항상 표시되도록 설정 */
+.button-container {
+    overflow-y: scroll;  /* 스크롤바 항상 표시 */
 }
 
 /* 한자 표시 스타일 */
