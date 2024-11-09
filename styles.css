@@ -9,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden; /* 전체 페이지에서 스크롤 숨기기 (필요시 조정) */
 }
 
 .container {
@@ -49,11 +50,11 @@ h1, h2 {
     align-items: center;
     gap: 15px;
     max-height: 80vh;  /* 최대 높이 설정 */
+    overflow-y: auto;  /* 기본적으로 스크롤 가능 */
     padding-right: 10px;
     background-color: #222;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-    overflow-y: auto;  /* 기본적으로 스크롤 가능 */
     scroll-behavior: smooth;  /* 스크롤 시 부드러운 이동 */
 }
 
@@ -65,7 +66,7 @@ h1, h2 {
 /* 모바일 및 터치스크린에서 스크롤 조정 */
 @media (pointer: coarse) {
     .button-container {
-        touch-action: none; /* 터치스크린에서 기본 스크롤을 비활성화하여 손으로 슬라이드 가능 */
+        touch-action: auto; /* 터치스크린에서 기본 스크롤을 활성화 */
     }
 }
 
@@ -106,7 +107,9 @@ h1, h2 {
     border-radius: 5px;
     margin: 10px 0;
     color: #333;
+    background-color: #333; /* 다크 모드 배경 */
 }
+
 .input-field:focus {
     outline: none;
     border-color: #66CDAA;
@@ -168,6 +171,7 @@ body {
     background-color: #555;
     cursor: not-allowed;
 }
+
 /* 다크 모드 입력 필드 스타일 */
 .input-field {
     background-color: #333;
