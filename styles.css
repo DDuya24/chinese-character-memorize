@@ -53,14 +53,22 @@ h1, h2 {
     background-color: #222;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-    overflow-y: scroll;  /* 스크롤바 추가 */
-    scroll-behavior: smooth;  /* 부드러운 스크롤 효과 */
-    -webkit-overflow-scrolling: touch; /* 모바일 스크롤 부드럽게 */
+    overflow-y: auto;  /* 기본적으로 스크롤 가능 */
+    scroll-behavior: smooth;  /* 스크롤 시 부드러운 이동 */
+    -webkit-overflow-scrolling: touch; /* 터치스크린에서 부드러운 스크롤 적용 */
 }
 
-/* 과목 선택 화면에서는 스크롤바 숨기지 않음 */
+/* 모바일에서 스크롤바 보이도록 설정 */
+@media (max-width: 600px) {
+    .button-container {
+        overflow-y: scroll; /* 스크롤바 항상 표시 */
+        height: 80vh; /* 모바일 화면에서 높이 설정 */
+    }
+}
+
+/* 과목 선택 화면에서는 스크롤바 숨기기 */
 .hide-scrollbar {
-    overflow-y: scroll;  /* 과목 선택 시에도 스크롤바 보이도록 */
+    overflow-y: hidden;  /* 과목 선택 시 스크롤바 숨기기 */
 }
 
 /* 모바일 및 터치스크린에서 스크롤 조정 */
@@ -108,6 +116,7 @@ h1, h2 {
     margin: 10px 0;
     color: #333;
 }
+
 .input-field:focus {
     outline: none;
     border-color: #66CDAA;
@@ -169,6 +178,7 @@ body {
     background-color: #555;
     cursor: not-allowed;
 }
+
 /* 다크 모드 입력 필드 스타일 */
 .input-field {
     background-color: #333;
