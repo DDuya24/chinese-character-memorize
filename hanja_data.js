@@ -203,8 +203,8 @@ const hanja_data = {
 "5과": [
     {"hanja": "身", "meaning": "몸", "reading": "신"},
     {"hanja": "體", "meaning": "몸", "reading": "체"},
-    {"hanja": "家", "meaning": "집", "reading": "우"},
-    {"hanja": "主", "meaning": "집", "reading": "주"},
+    {"hanja": "宇", "meaning": "집", "reading": "우"},
+    {"hanja": "宙", "meaning": "집", "reading": "주"},
     {"hanja": "有", "meaning": "있다", "reading": "유"},
     {"hanja": "無", "meaning": "없다", "reading": "무"},
     {"hanja": "去", "meaning": "가다", "reading": "거"},
