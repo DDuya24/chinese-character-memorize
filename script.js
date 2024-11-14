@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             subjectTitle.textContent = `${i}과`;
             subTitle.textContent = '학습 선택 (AI 사용으로 옳지 않은 한자 있을 수 있음)';
             currentSubjectNumber = i;
-            hanjaList = hanja_data[`${i}과`];
+            hanjaList = hanja_data[i + '과'];
             showStudyButtons();
         };
         buttonContainer.appendChild(button);
