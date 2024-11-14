@@ -198,7 +198,7 @@ const hanja_data = {
     {"hanja": "泣", "meaning": "울다", "reading": "읍"},
     {"hanja": "手", "meaning": "손", "reading": "수"},
     {"hanja": "拜", "meaning": "절", "reading": "배"},
-    {"hanja": "知", "meaning": "안다", "reading": "포"}
+    {"hanja": "抱", "meaning": "안다", "reading": "포"}
 ],
 "5과": [
     {"hanja": "身", "meaning": "몸", "reading": "신"},
